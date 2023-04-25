@@ -1,0 +1,32 @@
+﻿
+@{
+   
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="card">
+    <div class="card-body">
+        <div class="card-title">Kisi Ekleme Sayfasi</div>
+        <hr>
+        <form action="/Person/Create">
+            <div class="form-group">
+                <label for="input-1">ADSOYAD</label>
+                <input type="text" class="form-control"name="NameSurname" id="input-1" placeholder="AdinizSoyadiniz" maxlength="50" required>
+            </div>
+            <div class="form-group">
+                <label for="input-2">Code</label>
+                <input type="text" class="form-control"name="Code" id="input-2" placeholder="NUMARANIZ" maxlength="10" required>
+            </div>
+            <div class="form-group">
+                <label for="input-3">Sifre</label>
+                <input type="password" class="form-control"name="Password" id="input-3" placeholder="Sifre"  maxlength="20" required>
+            </div>
+           
+            <div class="form-group">
+                <button type="submit" class="btn btn-round btn-success shadow-success px-5"><i class="icon-lock"></i> Kaydet</button>
+            </div>
+        </form>
+    </div>
+</div>
